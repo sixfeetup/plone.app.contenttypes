@@ -4,6 +4,10 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
+- Check if LingaPlone is installed for adding Language='all' option of 
+  query catalog used to migration. No more for plone.app.multilingual.
+  [bsuttor]
+
 - Register explicitly plone.app.event dependency on configure.zcml.
   [hvelarde]
 
