@@ -211,4 +211,4 @@ def use_new_view_names(context, types_to_fix=None):  # noqa
 def add_leadimage_settings(context):
     context.runImportStepFromProfile(
         'profile-plone.app.contenttypes:default',
-        'registry')
+        'plone.app.registry')
