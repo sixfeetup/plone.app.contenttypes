@@ -56,12 +56,9 @@
                       <tal:block tal:replace="field_data/value" />
                     </td>
                     <td tal:condition="python:field == 'Title'">
-                      <img class="image-icon"
-                         tal:define="getIcon python:item.getURL()+'/@@images/image/icon'"
-                         tal:condition="python:  item.getIcon"                          
-                         tal:attributes="href item/getURL;
-                                         src  string:$getIcon"
-                      />
+                      <img tal:define="obj item/getObject; images obj/@@images"
+                           tal:condition="python: item.getIcon"
+                           tal:replace="structure python:images.scale('image', scale='icon').tag(css_class='image-icon')">
                       <a href="#"
                           tal:attributes="href item_link;
                           class string:$item_wf_state_class $item_type_class;
