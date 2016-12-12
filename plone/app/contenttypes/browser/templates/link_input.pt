@@ -2,7 +2,7 @@
   <div class="linkModal">
 
     <div class="linkTypes pat-autotoc autotabs"
-         data-pat-autotoc="section:span.linkType;levels:span.linkLabel;IDPrefix:link-autotoc-;classSectionName:linkType">
+         data-pat-autotoc="section:span.linkType;levels:span.linkLabel;">
 
       <span class="linkType internal" data-linkType="internal">
         <span class="linkLabel" i18n:translate="label_internal_url">Internal</span>
